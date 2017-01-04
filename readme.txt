@@ -1,1 +1,1 @@
-First commit to github
+Created and started markup of index.html
