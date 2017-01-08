@@ -5,14 +5,19 @@
 	<title>Package Master</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css" />
 	<script
-  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
-  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
-  crossorigin="anonymous"></script>
+	  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+	  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+	  crossorigin="anonymous"></script>
+	  <style type="text/css">
+	  	.main.container{
+	  		 margin-top: 5em;
+	  	}
+	  </style>
 </head>
 <body>
 	<nav class="ui borderless main menu">
 		<div class="ui text container">
-			<div>Logo</div>
+			<div class="header item"><i class="bordered large inverted olive object group icon"></i>Package Master</div>
 			<div class="right menu">
 				<a class="item" href=""><i class="add square icon"></i>New Order</a>
 				<a class="item" href=""><i class="list layout icon"></i>Orders</a>
@@ -31,7 +36,7 @@
 		<h1 class="ui huge header">
 			Order Status
 		</h1>
-		<table class="ui celled table">
+		<table class="ui celled striped table">
 				<thead>
 					<tr>
 						<th>Created</th>
