@@ -1,0 +1,45 @@
+<% include partials/header %>
+<!-- Body content start here -->
+	<div class="ui main text container">
+		<h1 class="ui huge header">
+			Order Status
+		</h1>
+		<table class="ui celled striped table">
+			<thead>
+				<tr>
+					<th>Created</th>
+					<th>Project Name</th>
+					<th>Subjects</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% orders.forEach(function(order){ %>
+					<tr>
+						<td><p> <%= order.dateCreated.toLocaleDateString() %> </p></td>
+						<td><p> <%= order.projectName %> </p></td>
+						<td><p> <%= order.subjects %> </p></td>
+						<td><p> <%= order.status %> </p></td>
+					</tr>
+				<% }); %>
+			</tbody>
+			<tfoot>
+				<tr><th colspan="4">
+						<div class="ui right floated pagination menu">
+							<a class="icon item">
+					          <i class="left chevron icon"></i>
+					        </a>
+					        <a class="item">1</a>
+					        <a class="item">2</a>
+					        <a class="item">3</a>
+					        <a class="item">4</a>
+					        <a class="icon item">
+					          <i class="right chevron icon"></i>
+					        </a>
+						</div>
+					</th>
+				</tr>
+			</tfoot>
+		</table>
+<!-- This is where body content ends-->
+<% include partials/footer%>
